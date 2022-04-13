@@ -1,7 +1,7 @@
 #include <iostream>
 #include "profile.h"
 
-
+/*
 
 class Particle {
 private:
@@ -39,10 +39,10 @@ Particle::Particle() {
   x = 0;   y = 0;
   vx = 0;  vy = 0;
 }
-
+*/
 
 //-----------------------------------------------------------------------------
-
+/*
 
 class Profile {
 private:
@@ -62,7 +62,7 @@ public:
     void setDisplayName(std::string dspn);
 };
 
-
+*/
 
 
 Profile::Profile(std::string usrn, std::string dspn){
@@ -74,35 +74,35 @@ Profile::Profile(std::string usrn, std::string dspn){
     
 Profile::Profile(){
   // Default Profile constructor (username="", displayname="")
+  username = "";
+  displayname = "";
 }
 
 
 
 std::string Profile::getUsername(){
   // Return username
-  return usrn;
+  return username;
 }
 
 
 std::string Profile::getFullName(){
   // Return name in the format: "displayname (@username)"
-  return (dspn + " (@" + usrn + ')');
+  return (displayname + " (@" + username + ')');
 }
 
 void Profile::setDisplayName(){
   // Change display name
+  std::cin >> displayname;
 }
 
 
+// move the particle
+  void move(double dt);
 
-
-
-
-
-
-
-
-
+void Particle::move(double dt) {
+  x += vx * dt;  y += vy * dt;
+}
 
 
 
