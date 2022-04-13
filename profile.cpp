@@ -1,70 +1,6 @@
 #include <iostream>
 #include "profile.h"
 
-/*
-
-class Particle {
-private:
-  double x;  // position, 2D coordinates
-  double y;
-  double vx; // velocity
-  double vy;
-public:
-  // accessor functions for the current position of the particle
-  double getX();
-  double getY();
-  // move the particle
-  void move(double dt);
-  // Constructor. Called to initialize private member variables
-  // when a particle object gets created
-  Particle(double posx, double posy, double velx, double vely);
-  // Default constructor, will assume pos=(0,0), vel=(0,0)
-  Particle();
-};
-
-double Particle::getX() { 
-  return x; 
-}
-double Particle::getY() { 
-  return y; 
-}
-void Particle::move(double dt) {
-  x += vx * dt;  y += vy * dt;
-}
-Particle::Particle(double posx, double posy, double velx, double vely) {
-  x = posx;   y = posy;
-  vx = velx;  vy = vely;
-}
-Particle::Particle() {
-  x = 0;   y = 0;
-  vx = 0;  vy = 0;
-}
-*/
-
-//-----------------------------------------------------------------------------
-/*
-
-class Profile {
-private:
-    std::string username;
-    std::string displayname;
-public:
-    // Profile constructor for a user (initializing 
-    // private variables username=usrn, displayname=dspn)
-    Profile(std::string usrn, std::string dspn);
-    // Default Profile constructor (username="", displayname="")
-    Profile();
-    // Return username
-    std::string getUsername();
-    // Return name in the format: "displayname (@username)"
-    std::string getFullName();
-    // Change display name
-    void setDisplayName(std::string dspn);
-};
-
-*/
-
-
 Profile::Profile(std::string usrn, std::string dspn){
   // Profile constructor for a user (initializing 
   // private variables username=usrn, displayname=dspn)
@@ -95,9 +31,6 @@ void Profile::setDisplayName(std::string newName){
   // Change display name
   displayname = newName;
 }
-
-
-
 
 
 
