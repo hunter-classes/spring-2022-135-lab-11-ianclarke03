@@ -91,18 +91,12 @@ std::string Profile::getFullName(){
   return (displayname + " (@" + username + ')');
 }
 
-void Profile::setDisplayName(){
+void Profile::setDisplayName(std::string newName){
   // Change display name
-  std::cin >> displayname;
+  displayname = newName;
 }
 
 
-// move the particle
-  void move(double dt);
-
-void Particle::move(double dt) {
-  x += vx * dt;  y += vy * dt;
-}
 
 
 
